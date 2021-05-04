@@ -7,3 +7,5 @@ class Project(models.Model):
     image = models.ImageField()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    url = models.URLField(null=True, blank=True)
+
